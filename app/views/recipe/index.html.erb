@@ -1,0 +1,7 @@
+<%= render 'shared/page_title', title: "Showing all recipes" %>
+
+<% @recipes.each do |recipe| %>
+  <h3><%= recipe.recipeName %></h3>
+  <p><%= recipe.description %></p>
+
+<% end %>
